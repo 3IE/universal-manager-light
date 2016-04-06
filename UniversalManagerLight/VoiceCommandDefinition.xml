@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="fr-fr" Name="UniversalAppCommandSet_fr-fr">
+    <AppName>génie</AppName>
+    <Example> Text Sam "Hello World" </Example>
+    <Command Name="offLight">
+      <Example>  éteind la lampe  </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> éteins la lampe </ListenFor>
+      <Feedback> La lampe est entrain de s'éteindre </Feedback>
+      <Navigate/>
+    </Command>
+    <Command Name="onLight">
+      <Example>  allume la lampe  </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> allume la lampe </ListenFor>
+      <Feedback> La lampe est entrain de s'allumer </Feedback>
+      <Navigate/>
+    </Command>
+   
+   <Command Name="changeColor">
+      <Example>  change la couleur en rouge  </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> change la couleur en {color} </ListenFor>
+      <Feedback> La couleur devient {color} </Feedback>
+      <Navigate/>
+    </Command>
+    <Command Name="changeAmbiance">
+      <Example>  change l'ambiance  </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> change l'ambiance </ListenFor>
+      <Feedback> Changement d'ambiance </Feedback>
+      <VoiceCommandService Target="Class1"/>
+    </Command>
+    <PhraseList Label="color">
+      <Item>rouge</Item>
+      <Item>bleu</Item>
+      <Item>vert</Item>
+    </PhraseList>
+  </CommandSet>
+</VoiceCommands>
