@@ -26,7 +26,7 @@
       <Example>  change l'ambiance  </Example>
       <ListenFor RequireAppName="BeforeOrAfterPhrase"> change l'ambiance </ListenFor>
       <Feedback> Changement d'ambiance </Feedback>
-      <VoiceCommandService Target="Class1"/>
+      <VoiceCommandService Target="CortanaDialogFlow"/>
     </Command>
     <PhraseList Label="color">
       <Item>rouge</Item>

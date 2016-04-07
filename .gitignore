@@ -4,3 +4,8 @@ UniversalManagerLight/Models/bin/
 UniversalManagerLight/Models/obj/
 UniversalManagerLight/bin/
 UniversalManagerLight/obj/
+RuntimeComponentCortana/obj/
+RuntimeComponentCortana/bin/
+UniversalManagerLight/AppPackages/UniversalManagerLight_1.0.0.0_Debug_Test/Add-AppDevPackage.ps1
+UniversalManagerLight/AppPackages/
+UniversalManagerLight/BundleArtifacts/

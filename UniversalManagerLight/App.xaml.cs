@@ -1,21 +1,11 @@
-﻿using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UniversalManagerLight.View;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Media.SpeechRecognition;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace UniversalManagerLight
@@ -158,7 +148,7 @@ namespace UniversalManagerLight
                         break;
                 }
 
-                // Re"peat the same basic initialization as OnLaunched() above, taking into account whether
+                // Repeat the same basic initialization as OnLaunched() above, taking into account whether
                 // or not the app is already active.
                 Frame rootFrame = Window.Current.Content as Frame;
 
