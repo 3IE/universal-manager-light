@@ -16,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -23,5 +24,12 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Demandez-moi quelque chose ?" Foreground="#FF2EADD8" FontSize="29.333" TextWrapping="Wrap"/>
         <TextBlock Grid.Row="1" Text="{Binding Message}" Foreground="#FF2EADD8" FontSize="15" TextWrapping="Wrap"/>
+        <StackPanel Grid.Row="2" >
+            <TextBlock Text="Activation de la gestion du Myo ? Attention vous devez posséder le bracelet Myo" Foreground="#FF2EADD8" FontSize="15" TextWrapping="Wrap"/>
+            <Button  RequestedTheme="Dark" Command="{Binding StartListeningMyo}" IsEnabled="{Binding IsEnabledMyo}">Activer</Button>
+        </StackPanel>
+        
+        <Image Grid.Row="2" Grid.Column="1" Source="ms-appx:///Assets/sdk-icon.png"/>
+        
     </Grid>
 </Page>
