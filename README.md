@@ -5,6 +5,8 @@
 ### Prerequisites :
 * Windows 10
 * Visual Studio 2015
+* A [MYO Bracelet](https://www.myo.com/) if you want activate this interaction
+
 
 When these prerequisites are installed, to initialize the solution you must go to the UniversalManagerLight folder and open this file :
 UniversalManagerLight.sln
