@@ -73,13 +73,15 @@ namespace UniversalManagerLight.ViewModel
 
                     e1.Myo.PoseChanged += Myo_PoseChanged;
                 };
-
+               
                 // listen for when the Myo disconnects
                 hub.MyoDisconnected += (sender, e1) =>
                 {
                     Debug.WriteLine("It looks like {0} arm Myo has disconnected!", e1.Myo.Arm);
                     e1.Myo.PoseChanged -= Myo_PoseChanged;
                 };
+
+                channel.StartListening();
             }
             catch (Exception ex)
             {
@@ -174,7 +176,7 @@ namespace UniversalManagerLight.ViewModel
             StartListeningMyo = new RelayCommand(() =>
             {
                 initMyo();
-            }, () => 
+            }, () =>
             {
                 return !_isEnabledMyo;
             });
